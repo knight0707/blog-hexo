@@ -43,9 +43,9 @@ menu:
 # 站点运行开始时间.
 time:
   enable: false
-  year: 2019 # 年份
-  month: 06 # 月份
-  date: 28 # 日期
+  year: 2021 # 年份
+  month: 08 # 月份
+  date: 19 # 日期
   hour: 00 # 小时
   minute: 00 # 分钟
   second: 00 # 秒
@@ -76,19 +76,19 @@ music:
   title: #非吸底模式有效
     enable: true
     show: 听听音乐
-  autoHide: true    # hide automaticaly
-  server: netease   #require	music platform: netease, tencent, kugou, xiami, baidu
-  type: playlist    #require song, playlist, album, search, artist
-  id: 503838841     #require	song id / playlist id / album id / search keyword
-  fixed: true       # 开启吸底模式
-  autoplay: false   # 是否自动播放
-  theme: '#42b983'
-  loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
-  order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
-  preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
-  volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
-  listFolded: true  # 列表默认折叠
-  hideLrc: true     # 隐藏歌词
+  autoHide: true # hide automaticaly
+  server: netease #require	music platform: netease, tencent, kugou, xiami, baidu
+  type: playlist #require song, playlist, album, search, artist
+  id: 503838841 #require	song id / playlist id / album id / search keyword
+  fixed: true # 开启吸底模式
+  autoplay: false # 是否自动播放
+  theme: "#42b983"
+  loop: "all" # 音频循环播放, 可选值: 'all', 'one', 'none'
+  order: "random" # 音频循环顺序, 可选值: 'list', 'random'
+  preload: "auto" # 预加载，可选值: 'none', 'metadata', 'auto'
+  volume: 0.7 # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
+  listFolded: true # 列表默认折叠
+  hideLrc: true # 隐藏歌词
 
 # Whether to display the videos.
 # 是否在首页显示视频.
@@ -101,9 +101,9 @@ video:
   thumbnails:
   height: # 如：400
   autoplay: false # 是否自动播放
-  theme: '#42b983'
+  theme: "#42b983"
   loop: false # 是否循环播放
-  preload: 'auto' # 预加载，可选值: 'none', 'metadata', 'auto'
+  preload: "auto" # 预加载，可选值: 'none', 'metadata', 'auto'
   volume: 0.7
 
 # Whether to display the title of the recommended posts
@@ -132,14 +132,14 @@ indexbtn:
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github:  https://github.com/blinkfox
-  email: 1181062873@qq.com
+  github: https://github.com/knight0707
+  email: yeweigen0909@126.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
-  qq: 1181062873
+  qq: #
   weibo: # https://weibo.com/xxx
   zhihu: # https://www.zhihu.com/xxx
-  rss: true # true、false
+  rss: false # true、false
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
 # You can add `toc: false` to the Front-matter of a post to turn off the TOC.
@@ -215,19 +215,19 @@ myProjects:
   data:
     hexo-theme-matery:
       icon: fas fa-file-alt
-      iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
+      iconBackground: "linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)"
       url: http://github.com/blinkfox/hexo-theme-matery
       desc: This is a Hexo blog theme with 'Material Design' and responsive design.
     Fenix:
-        icon: fas fa-database
-        iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-        url: https://github.com/blinkfox/fenix
-        desc: 这是 Spring Data JPA 复杂或动态 SQL 查询的扩展库。
+      icon: fas fa-database
+      iconBackground: "linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)"
+      url: https://github.com/blinkfox/fenix
+      desc: 这是 Spring Data JPA 复杂或动态 SQL 查询的扩展库。
     typora-vue-theme:
-        icon: fas fa-file-alt
-        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-        url: https://github.com/blinkfox/typora-vue-theme
-        desc: This is a typora theme inspired by Vue document style.
+      icon: fas fa-file-alt
+      iconBackground: "linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)"
+      url: https://github.com/blinkfox/typora-vue-theme
+      desc: This is a typora theme inspired by Vue document style.
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
@@ -236,22 +236,22 @@ mySkills:
   enable: true
   data:
     Java:
-      background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
+      background: "linear-gradient(to right, #FF0066 0%, #FF00CC 100%)"
       percent: 85%
     JavaScript:
-      background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
+      background: "linear-gradient(to right, #9900FF 0%, #CC66FF 100%)"
       percent: 80%
     HTML5:
-      background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
+      background: "linear-gradient(to right, #2196F3 0%, #42A5F5 100%)"
       percent: 80%
     CSS:
-      background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
+      background: "linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)"
       percent: 70%
     SQL:
-      background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
+      background: "linear-gradient(to right, #4CAF50 0%, #81C784 100%)"
       percent: 90%
     程序设计:
-      background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
+      background: "linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)"
       percent: 75%
 
 # config gallery of my photos in about page.
@@ -323,9 +323,9 @@ valine:
   notify: false
   verify: false
   visitor: true
-  avatar: 'mm' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
+  avatar: "mm" # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   pageSize: 10
-  placeholder: 'just go go' # Comment Box placeholder
+  placeholder: "just go go" # Comment Box placeholder
   background: /medias/comment_bg.png
 
 # The configuration of the MiniValine comment module is not activated by default.
@@ -463,30 +463,30 @@ libs:
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
 featureImages:
-- /medias/featureimages/0.jpg
-- /medias/featureimages/1.jpg
-- /medias/featureimages/2.jpg
-- /medias/featureimages/3.jpg
-- /medias/featureimages/4.jpg
-- /medias/featureimages/5.jpg
-- /medias/featureimages/6.jpg
-- /medias/featureimages/7.jpg
-- /medias/featureimages/8.jpg
-- /medias/featureimages/9.jpg
-- /medias/featureimages/10.jpg
-- /medias/featureimages/11.jpg
-- /medias/featureimages/12.jpg
-- /medias/featureimages/13.jpg
-- /medias/featureimages/14.jpg
-- /medias/featureimages/15.jpg
-- /medias/featureimages/16.jpg
-- /medias/featureimages/17.jpg
-- /medias/featureimages/18.jpg
-- /medias/featureimages/19.jpg
-- /medias/featureimages/20.jpg
-- /medias/featureimages/21.jpg
-- /medias/featureimages/22.jpg
-- /medias/featureimages/23.jpg
+  - /medias/featureimages/0.jpg
+  - /medias/featureimages/1.jpg
+  - /medias/featureimages/2.jpg
+  - /medias/featureimages/3.jpg
+  - /medias/featureimages/4.jpg
+  - /medias/featureimages/5.jpg
+  - /medias/featureimages/6.jpg
+  - /medias/featureimages/7.jpg
+  - /medias/featureimages/8.jpg
+  - /medias/featureimages/9.jpg
+  - /medias/featureimages/10.jpg
+  - /medias/featureimages/11.jpg
+  - /medias/featureimages/12.jpg
+  - /medias/featureimages/13.jpg
+  - /medias/featureimages/14.jpg
+  - /medias/featureimages/15.jpg
+  - /medias/featureimages/16.jpg
+  - /medias/featureimages/17.jpg
+  - /medias/featureimages/18.jpg
+  - /medias/featureimages/19.jpg
+  - /medias/featureimages/20.jpg
+  - /medias/featureimages/21.jpg
+  - /medias/featureimages/22.jpg
+  - /medias/featureimages/23.jpg
 
 # default configs that the default policy for every articles/posts
 # default 配置文章的默认转载规则
@@ -540,7 +540,7 @@ ribbon:
   size: 150 # 彩带大小, 默认: 90.
   alpha: 0.6 # 彩带透明度 (0 ~ 1), 默认: 0.6.
   zIndex: -1 # 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1.
-  clickChange: false  # 设置是否每次点击都更换彩带.
+  clickChange: false # 设置是否每次点击都更换彩带.
 
 # 背景动态彩带.
 ribbon_dynamic:
@@ -555,7 +555,7 @@ sharejs:
 # addthis文章分享模块.
 addthis:
   enable: false
-  pubid:  # 前往https://www.addthis.com/获取
+  pubid: # 前往https://www.addthis.com/获取
 
 # 打字效果副标题.
 # 如果有符号 ‘ ，请在 ’ 前面加上 \
@@ -589,7 +589,7 @@ icp:
   url: # 备案链接
   text: # 备案信息
 
-# CDN访问加速 
+# CDN访问加速
 # 第一次使用本功能，一定要先配置url，再`hexo cl && hexo g && hexo d`部署到GitHub的仓库，注意！必须是GitHub的仓库！
 # 如果必须要使用国内的coding或者gitee，可以采用双部署，同时将网站部署到两个仓库（其中一个必须是GitHub的仓库）
 # URL配置规则（例子如下）： https://cdn.jsdelivr.net/gh/你的GitHub用户名/你的仓库名
@@ -600,7 +600,7 @@ icp:
 # 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在上面设置js及css路径中可以直接写.min.xxx
 jsDelivr:
   url: # https://cdn.jsdelivr.net/gh/skyls03/skyls03.github.io
-  
+
 # 网站背景图
 background:
   enable: false
@@ -627,7 +627,7 @@ artitalk:
 # 关注公众号 "黑石哔哔"，发送: //bindCurrentUser:你的APPID,你的MASTERKEY,你的RESTAPI
 # 可用leancloud国际版，国际版api为 https://appid前八位.api.lncldglobal.com
 bbtime:
- enable: false
- appId: # 你的appId
- appKey: # 你的appKey
- serverURLs: # https://你的api
+  enable: false
+  appId: # 你的appId
+  appKey: # 你的appKey
+  serverURLs: # https://你的api

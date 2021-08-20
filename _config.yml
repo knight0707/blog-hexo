@@ -4,12 +4,12 @@
 
 # Site
 title: 叶易的博客
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
+subtitle: ""
+description: ""
+keywords: 叶易,叶卫根,架构,架构设计,业务架构,java,JVM,源码分析,netty,Spring,MQ,Kafka,redis,RocketMQ,分布式事务
+author: 叶易
 language: zh-CN
-timezone: ''
+timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -37,7 +37,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -47,18 +47,18 @@ highlight:
   enable: false
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: false
 prismjs:
   enable: false
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace: ""
 prism_plugin:
-  mode: 'preprocess'    # realtime/preprocess
-  theme: 'tomorrow'
-  line_number: false    # default false
+  mode: "preprocess" # realtime/preprocess
+  theme: "tomorrow"
+  line_number: false # default false
   custom_css:
 
 # Home page setting
@@ -66,7 +66,7 @@ prism_plugin:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 6
   order_by: -date
 
@@ -86,7 +86,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: "mtime"
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -111,7 +111,7 @@ search:
 # 中文链接转拼音 插件
 permalink_pinyin:
   enable: true
-  separator: '-' # default: '-'
+  separator: "-" # default: '-'
 # 文章字数统计插件
 wordCount:
   enable: false # 将这个值设置为 true 即可.
