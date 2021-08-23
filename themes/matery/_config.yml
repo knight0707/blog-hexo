@@ -16,12 +16,12 @@ menu:
   About:
     url: /about
     icon: fas fa-user-circle
-  Contact:
-    url: /contact
-    icon: fas fa-comments
-  Friends:
-    url: /friends
-    icon: fas fa-address-book
+  # Contact:
+  #   url: /contact
+  #   icon: fas fa-comments
+  # Friends:
+  #   url: /friends
+  #   icon: fas fa-address-book
   # 二级菜单写法如下
   #Medias:
   #  icon: fas fa-list
@@ -76,12 +76,12 @@ music:
   title: #非吸底模式有效
     enable: true
     show: 听听音乐
-  autoHide: true # hide automaticaly
+  autoHide: false # hide automaticaly
   server: netease #require	music platform: netease, tencent, kugou, xiami, baidu
   type: playlist #require song, playlist, album, search, artist
   id: 503838841 #require	song id / playlist id / album id / search keyword
-  fixed: true # 开启吸底模式
-  autoplay: false # 是否自动播放
+  fixed: false # 开启吸底模式
+  autoplay: true # 是否自动播放
   theme: "#42b983"
   loop: "all" # 音频循环播放, 可选值: 'all', 'one', 'none'
   order: "random" # 音频循环顺序, 可选值: 'list', 'random'
@@ -169,9 +169,9 @@ reward:
 # minCharNumber: Approve copyright information by copying at least how many characters.
 # 是否激活复制文章时追加博客和作者的版权信息.
 copyright:
-  enable: false
+  enable: true
   minCharNumber: 120 # 至少复制多少个字符就追加版权信息.
-  description: 本文章著作权归作者所有，任何形式的转载都请注明出处。
+  description: 本文章著作权归叶易（https://yeweigen.cn/）所有，任何形式的转载都请注明出处。
 
 # Whether to activate the mathjax, this is a global configuration, but the post still does not open the mathjax rendering.
 # Considering that the mathjax loading is time consuming,
@@ -190,10 +190,10 @@ mathjax:
 postInfo:
   date: true # 发布日期
   update: false # 更新日期
-  wordCount: false # 文章字数统计
+  wordCount: true # 文章字数统计
   totalCount: false # 站点总文章字数
-  min2read: false # 文章阅读时长
-  readCount: false # 文章阅读次数
+  min2read: true # 文章阅读时长
+  readCount: true # 文章阅读次数
 
 # Whether to activate the 'love' effect of clicking on the page.
 # 是否激活点击页面的'爱心'效果，默认激活.
@@ -211,7 +211,7 @@ profile:
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myProjects:
-  enable: true
+  enable: false
   data:
     hexo-theme-matery:
       icon: fas fa-file-alt
@@ -240,13 +240,13 @@ mySkills:
       percent: 85%
     JavaScript:
       background: "linear-gradient(to right, #9900FF 0%, #CC66FF 100%)"
-      percent: 80%
+      percent: 60%
     HTML5:
       background: "linear-gradient(to right, #2196F3 0%, #42A5F5 100%)"
-      percent: 80%
+      percent: 60%
     CSS:
       background: "linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)"
-      percent: 70%
+      percent: 60%
     SQL:
       background: "linear-gradient(to right, #4CAF50 0%, #81C784 100%)"
       percent: 90%
@@ -284,12 +284,12 @@ postCalendar: true
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
   enable: false
-  owner:
-  repo:
+  owner: knight0707
+  repo: knight0707.github.io
   oauth:
-    clientId:
-    clientSecret:
-  admin:
+    clientId: 77fd53203e6a69a3734a
+    clientSecret: 07fbc380768ac539b380ca7b0d24914fa116c4f6
+  admin: knight0707
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
@@ -317,9 +317,9 @@ livere:
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: false
-  appId:
-  appKey:
+  enable: true
+  appId: dzzOMaA4EOg0bP1nuqJdYc8B-gzGzoHsz
+  appKey: rFjC9NRJ6RBOs0vKzhuW4v5L
   notify: false
   verify: false
   visitor: true
@@ -519,7 +519,7 @@ daovoice:
 # Tidio online contact
 tidio:
   enable: false
-  public_key:
+  public_key: tszfvtwlqgrsat3aszuykrecgsrwgrbo
 
 # 腾讯兔小巢，见https://txc.qq.com/
 tuxiaochao:
@@ -550,7 +550,7 @@ ribbon_dynamic:
 # 支持顺序，可选项目为twitter, facebook, google, qq, qzone, wechat, weibo, douban, linkedin.
 sharejs:
   enable: true
-  sites: twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin
+  sites: wechat,douban
 
 # addthis文章分享模块.
 addthis:
@@ -566,8 +566,10 @@ subtitle:
   startDelay: 300 # 开始延迟
   typeSpeed: 100 # 打字速度
   backSpeed: 50 # 删除速度
-  sub1: 从来没有真正的绝境, 只有心灵的迷途
-  sub2: Never really desperate, only the lost of the soul
+  # sub1: 从来没有真正的绝境, 只有心灵的迷途
+  # sub2: Never really desperate, only the lost of the soul
+  sub1: 种一棵树最好的时间是十年前，其次是现在
+  sub2: The best time to plant a tree is ten years ago, followed by now
 
 # 手机二级菜单.
 navMenu:
