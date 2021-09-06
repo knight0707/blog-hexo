@@ -1,8 +1,17 @@
 ---
+title: 缓存
+date: 2021-08-19 16:58:35
+type: "categories"
+layout: "categories"
+---
+
+---
+
 title: 架构
 date: 2021-08-19 16:58:35
 type: "categories"
 layout: "categories"
+
 ---
 
 ---
