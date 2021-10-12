@@ -31,3 +31,12 @@ type: "categories"
 layout: "categories"
 
 ---
+
+---
+
+title: mysql
+date: 2021-10-12 17:17:35
+type: "categories"
+layout: "categories"
+
+---
