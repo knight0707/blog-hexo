@@ -72,11 +72,13 @@ categories: mysql
 
 ​		InnoDB在处理快照读（consistent read 一致性读时），只要拿出数据中的DB_TRX_ID（隐式列中最近更新或新增该行数据事务的事务标识，事务ID）然后与ReadView中的m_ids、m_low_limit_id、m_up_limit_id、m_creator_trx_id进行比较，就可确定当前版本的数据对ReadView读视图是否可见。处理算法大体流程如下：
 
-**1、DB_TRX_ID ≥ m_low_limit_id （高水位）， DB_TRX_ID 对应数据对当前事务不可见，表示这个数据是由将来的事务更新的。**
+**1、如果DB_TRX_ID = m_creator_trx_id, DB_TRX_ID 对应数据对当前事务可见，表示这条数据是由当前事务m_creator_trx_id 创建的。 **
 
-**2、DB_TRX_ID < m_up_limit_id （低水位） ，DB_TRX_ID 对应数据对当前事务可见，表示这个数据是由已经提交的事务更新的。**
+**2、DB_TRX_ID ≥ m_low_limit_id （高水位）， DB_TRX_ID 对应数据对当前事务不可见，表示这条数据是由将来的事务更新的。**
 
-**3、DB_TRX_ID 介于高水位与低水位之间，如果DB_TRX_ID在m_ids（活跃事务集合）中，表示尚未提交的事务， DB_TRX_ID 对应数据对当前事务不可见;  如果DB_TRX_ID不在m_ids（活跃事务集合）中，表示事务已经提交了， DB_TRX_ID 对应数据对当前事务可见。**
+**3、DB_TRX_ID < m_up_limit_id （低水位） ，DB_TRX_ID 对应数据对当前事务可见，表示这条数据是由已经提交的事务更新的。**
+
+**4、DB_TRX_ID 介于高水位与低水位之间，如果DB_TRX_ID在m_ids（活跃事务集合）中，表示尚未提交的事务， DB_TRX_ID 对应数据对当前事务不可见;  如果DB_TRX_ID不在m_ids（活跃事务集合）中，表示事务已经提交了， DB_TRX_ID 对应数据对当前事务可见。**
 
 #### 参考文档
 

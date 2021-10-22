@@ -76,3 +76,32 @@ type: "tags"
 layout: "tags"
 
 ---
+
+
+---
+
+title: BASE
+date: 2020-10-19 13:25:25
+type: "tags"
+layout: "tags"
+
+---
+
+
+---
+
+title: CAP
+date: 2020-10-19 13:25:25
+type: "tags"
+layout: "tags"
+
+---
+
+---
+
+title: 分布式事务
+date: 2020-10-19 13:25:25
+type: "tags"
+layout: "tags"
+
+---
