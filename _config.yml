@@ -110,7 +110,7 @@ search:
   field: post
 # 中文链接转拼音 插件
 permalink_pinyin:
-  enable: true
+  enable: false
   separator: "-" # default: '-'
 # 文章字数统计插件
 wordCount:
